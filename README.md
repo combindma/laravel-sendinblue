@@ -18,21 +18,56 @@ composer require combindma/laravel-sendinblue
 You can publish the config file with:
 
 ```bash
-php artisan vendor:publish --tag="laravel-sendinblue-config"
+php artisan vendor:publish --tag="sendinblue-config"
 ```
 
 This is the contents of the published config file:
 
 ```php
 return [
+    /*
+   * Enable or disable Sendinblue. Useful for local development when running tests.
+   */
+    'api_enabled' => env('SENDINBLUE_ENABLED', false),
+
+    /*
+     * The API key of a Sendinblue account.
+     */
+    'apiKey' => env('SENDINBLUE_APIKEY'),
+
+    /*
+     * The default Ids of the lists to add the contact to when no listIds has been specified in a method.
+     */
+    'defaultListIds' => [
+        2,
+    ]
 ];
 ```
 
 ## Usage
 
+Subscribing an email address can be done like this:
+
 ```php
-$sendinblue = new Combindma\Sendinblue();
-echo $sendinblue->echoPhrase('Hello, Combindma!');
+Sendinblue::subscribe('email@email.com');
+```
+
+You can pass some merge variables as the second argument:
+
+```php
+Sendinblue::subscribe('email@email.com', ['FNAME'=>'Rince', 'LNAME'=>'Wind'];
+```
+
+You can subscribe someone to a specific list ID by using the third argument:
+
+```php
+Sendinblue::subscribe('email@email.com', ['FNAME'=>'Rince', 'LNAME'=>'Wind'], [2]);
+```
+
+Unsubscribing an email address can be done like this:
+
+```php
+Sendinblue::unsubscribe('email@email.com');
 ```
 
 ## Testing
