@@ -16,5 +16,5 @@ return [
      */
     'defaultListIds' => [
         2,
-    ]
+    ],
 ];

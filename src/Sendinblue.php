@@ -12,8 +12,11 @@ use SendinBlue\Client\Model\CreateContact;
 class Sendinblue
 {
     protected $apiKey;
+
     protected $apiEnabled;
+
     protected $listIds;
+
     protected $baseUri = 'https://api.sendinblue.com/v3';
 
     public function __construct()

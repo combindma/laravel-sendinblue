@@ -1,8 +1,8 @@
 # Laravel Seninblue
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/combindma/laravel-sendinblue.svg?style=flat-square)](https://packagist.org/packages/combindma/laravel-sendinblue)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/combindma/laravel-sendinblue/run-tests?label=tests)](https://github.com/combindma/laravel-sendinblue/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/combindma/laravel-sendinblue/Check%20&%20fix%20styling?label=code%20style)](https://github.com/combindma/laravel-sendinblue/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amain)
+[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/combindma/laravel-sendinblue/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/combindma/laravel-sendinblue/actions?query=workflow%3Arun-tests+branch%3Amain)
+[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/combindma/laravel-sendinblue/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/combindma/laravel-sendinblue/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/combindma/laravel-sendinblue.svg?style=flat-square)](https://packagist.org/packages/combindma/laravel-sendinblue)
 
 Manage newsletters in Laravel with Sendinblue
